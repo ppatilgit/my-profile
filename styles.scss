@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto&display=swap');
+
+$font-body:"Roboto", sans-serif;
+$font-display: "Dancing Script", cursive;
+
+$color-primary: #28527a;
+$color-secondary: #f0a500;
+$color-black: #333333;
+$color-white: #fafafa;
+$color-background: 	#008b8b;
+$color-background-section: 	#c2e0e0;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-body;
+    color: $color-black
+}
+
+a:link,
+a:visited{
+    text-decoration: none;
+}
+
+header{
+    border: 2px solid $color-white;
+    height: 10vh;
+    background-color: $color-background;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    
+
+    p{
+        font-family: $font-display;
+        color: $color-white;
+        font-size: 30px;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        a {
+            text-decoration: none;
+            color: white;
+            font-size: 15px;
+        }
+        
+        a:hover {
+            color: black;
+            font-size: 20px;
+        }
+    }
+}
+
+#profile-intro{
+    border: 2px solid $color-white;
+    background-color: $color-background-section;
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+    h3{
+        color: $color-primary;
+        text-align: center;
+    }
+    div{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+        .intro{
+            display: flex;
+            height: 40vh;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            p{
+                font-family: $font-display;
+                font-size: 15px;
+                font-weight: bold;
+            }
+            h1{
+                font-family: $font-body;
+            }
+            a{
+                background-color: #f0a500;
+                font-size: 15px;
+                font-weight: bold;
+                padding: 20px;
+                border: 2px solid black;
+                border-radius: 10px;
+            }
+            a:hover {
+                color: white;
+                font-size: 20px;
+                background-color:  $color-primary;
+            }
+        }
+        #profile-pic{
+            height: 40vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                border-radius: 100px;
+                border: 2px solid $color-white;
+                height: 100%;
+                width: 50%;
+            }
+            
+        }
+    }
+
+}
+
+#tech-skills{
+    border: 2px solid $color-white;
+    background-color: $color-background-section;
+    display: grid;
+    grid-template-rows: 1fr 2fr 2fr;
+    h3{
+        color: $color-primary;
+        text-align: center;
+    }
+    p{
+        font-family: $font-display;
+        font-size: 15px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .skills-tools{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        i{
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+    }
+
+}
