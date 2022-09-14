@@ -74,7 +74,6 @@ header{
         grid-gap: 5px;
         .intro{
             display: flex;
-            height: 40vh;
             flex-direction: column;
             justify-content: space-around;
             align-items: center;
@@ -101,15 +100,14 @@ header{
             }
         }
         #profile-pic{
-            height: 40vh;
             display: flex;
             justify-content: center;
             align-items: center;
             img{
                 border-radius: 100px;
                 border: 2px solid $color-white;
-                height: 100%;
-                width: 50%;
+                height: 80%;
+                width: 30%;
             }
             
         }
@@ -144,6 +142,39 @@ header{
             align-items: center;
         }
         
+    }
+
+}
+
+#my-projects{
+    border: 2px solid $color-white;
+    background-color: $color-background-section;
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    h3{
+        color: $color-primary;
+        text-align: center;
+    }
+    .cards{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+        .card{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            border: 2px solid white;
+            border-radius: 5%;
+            margin: 3%;
+            img{
+                height: 50%;
+                width: 25%;
+            }
+
+        }
+
     }
 
 }

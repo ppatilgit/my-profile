@@ -60,7 +60,6 @@ header nav a:hover {
 }
 #profile-intro div .intro {
   display: flex;
-  height: 40vh;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
@@ -87,7 +86,6 @@ header nav a:hover {
   background-color: #28527a;
 }
 #profile-intro div #profile-pic {
-  height: 40vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -95,8 +93,8 @@ header nav a:hover {
 #profile-intro div #profile-pic img {
   border-radius: 100px;
   border: 2px solid #fafafa;
-  height: 100%;
-  width: 50%;
+  height: 80%;
+  width: 30%;
 }
 
 #tech-skills {
@@ -126,4 +124,34 @@ header nav a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#my-projects {
+  border: 2px solid #fafafa;
+  background-color: #c2e0e0;
+  display: grid;
+  grid-template-rows: 1fr 4fr;
+}
+#my-projects h3 {
+  color: #28527a;
+  text-align: center;
+}
+#my-projects .cards {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5px;
+}
+#my-projects .cards .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid white;
+  border-radius: 5%;
+  margin: 3%;
+}
+#my-projects .cards .card img {
+  height: 50%;
+  width: 25%;
 }
