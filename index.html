@@ -11,87 +11,94 @@
 </head>
 
 <body>
-    <header>
-        <p>Pavitra Patil</p>
-        <nav class="header_nav">
-            <a href="#">Home</a>
-            <a href="#">About Me</a>
-            <a href="#">Projects</a>
-            <a href="#" class="button">Get in touch</a>
+    <header class="main__header" id ="home">
+        <h2 class="header__title">Pavitra Patil</h2>
+        <nav class="header__items">
+            <a class="header__link header__link--hover" href="#profile-intro">About Me</a>
+            <a class="header__link header__link--hover" href="#tech-skills">Skills</a>
+            <a class="header__link header__link--hover" href="#my-projects">Projects</a>
+            <a class="header__link header__link--hover" href="#emailid">Get in touch</a>
         </nav>
     </header>
-    <main>
-        <section class="section-box" id="profile-intro">
-            <h3 class="section-header">About Me</h3>
-            <div>
-                <div class="intro">
-                    <p> Hey! I'm Pavitra Patil</p>
-                    <h1>A Fronend Software Developer based in the UK.</h1>
-                    <a href="#" class="button">Take a look at my work </a>
+    <main class="main__section">
+        <section class="section__box" id="profile-intro">
+            <h3 class="section__header">About Me</h3>
+            <div class="about__me">
+                <div class="intro__details">
+                    <p class="intro__welcome"> Hey! I'm Pavitra Patil</p>
+                    <h1 class="main__intro">A Fronend Software Developer based in the US.</h1>
+                    <a class ="works__button works__button--hover" href="#my-projects">Take a look at my work </a>
                 </div>
-                <div id="profile-pic">
-                    <img src="./images/SE.jpg" alt="">
+                <div class="profile__pic">
+                    <img class="profile__image profile__image--hover" src="./images/SE.jpg" alt="">
                 </div>
             </div>
         </section>
 
-        <section class="section-box" id="tech-skills">
-            <h3 class="section-header">Technical Skills</h3>
-            <p class="skills-text">Add all technical tools used: Coding language, IDE, Dev tools, SDLC tools</p>
-            <div class="skills-tools">
-                <i class="fa-brands fa-html5">HTML</i>
-                <i class="fa-brands fa-css3">CSS</i>
-                <i class="fa-brands fa-java">JAVA</i>
-                <i class="fa-brands fa-js">JAVASCRIPT</i>
-                <i class="fa-brands fa-node-js">NODE.JS</i>
-                <i class="fa-brands fa-github">GIT</i>
-                <i class="fa-solid fa-cloud">GCP CLOUD</i>
-                <i class="fa-brands fa-jira">JIRA</i>
-                <i class="fa-solid fa-database">SQL</i>
+        <section class="section__box" id="tech-skills">
+            <h3 class="section__header">Technical Skills</h3>
+            <p class="skills__text">Add all technical tools used: Coding language, IDE, Dev tools, SDLC tools</p>
+            <div class="skills__tools">
+                <i class="fa-brands fa-html5 fa-brands--hover">HTML</i>
+                <i class="fa-brands fa-css3 fa-brands--hover">CSS</i>
+                <i class="fa-brands fa-java fa-brands--hover">JAVA</i>
+                <i class="fa-brands fa-js fa-brands--hover">JAVASCRIPT</i>
+                <i class="fa-brands fa-node-js fa-brands--hover">NODE.JS</i>
+                <i class="fa-brands fa-github fa-brands--hover">GIT</i>
+                <i class="fa-solid fa-cloud fa-brands--hover">GCP CLOUD</i>
+                <i class="fa-brands fa-jira fa-brands--hover">JIRA</i>
+                <i class="fa-solid fa-database fa-brands--hover">SQL</i>
             </div>
         </section>
 
-        <section class ="section-box" id="my-projects">
-            <h3 class="section-header">My Projects</h3>
-            <div class="cards">
-                <div class="card">
-                    <img class="project_img" src="./images/DB_Proj1.PNG" alt="">
-                    <h2>Client Project</h2>
-                    <p>Project created for a client</p>
+        <section class ="section__box" id="my-projects">
+            <h3 class="section__header">My Projects</h3>
+            <div class="card__list">
+                <div class="card__project card__project--hover">
+                    <img class="project__img" src="./images/DB_Proj1.PNG" alt="">
+                    <h2 class="project__title">Client Project</h2>
+                    <p class="project__desc">Project created for a client</p>
                     <div>
-                        <a href="#">Access this project here</a>
+                        <a class="project__link project__link--hover" href="https://github.com/ppatilgit/web-recap" target="_blank">Access this project here</a>
                     </div>
                 </div>
-                <div class="card">
-                    <img class="project_img" src="./images/DB_Proj1.PNG" alt="">
-                    <h2>Volunteering Project</h2>
-                    <p>Project created for a NGO</p>
-                    <a href=""></a>
+                <div class="card__project card__project--hover">
+                    <img class="project__img" src="./images/DB_Proj1.PNG" alt="">
+                    <h2 class="project__title">Volunteering Project</h2>
+                    <p class="project__desc">Project created for a NGO</p>
                     <div>
-                        <a href="#">Access this project here</a>
+                        <a class="project__link project__link--hover" href="https://github.com/ppatilgit/flexbox-repo" target="_blank">Access this project here</a>
                     </div>
                 </div>
-                <div class="card">
-                    <img class="project_img" src="./images/DB_Proj1.PNG" alt="">
-                    <h2>API Project</h2>
-                    <p>Services Project</p>
+                <div class="card__project card__project--hover">
+                    <img class="project__img" src="./images/DB_Proj1.PNG" alt="">
+                    <h2 class="project__title">API Project</h2>
+                    <p class="project__desc">Services Project</p>
                     <div>
-                        <a href="#">Access this project here</a>
+                        <a class="project__link project__link--hover" href="https://github.com/ppatilgit/precourse-web-fundamentals" target="_blank">Access this project here</a>
                     </div>
                 </div>
-                <div class="card">
-                    <img class="project_img" src="./images/DB_Proj1.PNG" alt="">
-                    <h2>Web Project</h2>
-                    <p>Web site for School</p>
-                    <a href=""></a>
+                <div class="card__project card__project--hover">
+                    <img class="project__img" src="./images/DB_Proj1.PNG" alt="">
+                    <h2 class="project__title">Web Project</h2>
+                    <p class="project__desc">Web site for School</p>
                     <div>
-                        <a href="#">Access this project here</a>
+                        <a class="project__link project__link--hover"href="https://github.com/ppatilgit/my-profile" target="_blank">Access this project here</a>
                     </div>
                 </div>
             </div>
         </section>
 
     </main>
+    <footer class="main__footer">
+        <h2 class="footer__title" id="emailid">pavitraravi.patil@yahoo.com</h2>
+        <nav class="footer__items">
+            <a class="footer__link footer__link--hover" href="#home">Home</a>
+            <a class="footer__link footer__link--hover" href="#profile-intro">About Me</a>
+            <a class="footer__link footer__link--hover" href="#tech-skills">Skills</a>
+            <a class="footer__link footer__link--hover" href="#my-projects">Projects</a>
+        </nav>
+    </footer>
 
 </body>
 
