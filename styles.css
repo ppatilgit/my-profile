@@ -12,45 +12,50 @@ a:visited {
 
 a:hover, i:hover {
   color: white;
-  background-color: #28527a;
+  background-color: #f0a500;
 }
 
-.main__header, .main__footer {
+.header, .footer {
   height: 10vh;
   background-color: #105555;
   display: grid;
   grid-template-columns: 1fr 3fr;
 }
-.main__header *, .main__footer * {
+.header *, .footer * {
   font-family: "Dancing Script", cursive;
   color: #fafafa;
 }
-.main__header .header__title, .main__header .footer__title, .main__footer .header__title, .main__footer .footer__title {
+.header__title, .header__title, .footer__title, .footer__title {
   font-size: 3rem;
   font-weight: bold;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.main__header .header__items, .main__header .footer__items, .main__footer .header__items, .main__footer .footer__items {
+.header__items, .header__items, .footer__items, .footer__items {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
-.main__header .header__items .header__link, .main__header .header__items .footer__link, .main__header .footer__items .header__link, .main__header .footer__items .footer__link, .main__footer .header__items .header__link, .main__footer .header__items .footer__link, .main__footer .footer__items .header__link, .main__footer .footer__items .footer__link {
+.header__items__link, .header__items .footer__link, .header__items__link, .header__items .footer__link, .footer__items__link, .footer__items .footer__link, .footer__items__link, .footer__items .footer__link {
   text-decoration: none;
   font-size: 1.5rem;
 }
-.main__header .header__items .header__link--hover:hover, .main__header .header__items .footer__link--hover:hover, .main__header .footer__items .header__link--hover:hover, .main__header .footer__items .footer__link--hover:hover, .main__footer .header__items .header__link--hover:hover, .main__footer .header__items .footer__link--hover:hover, .main__footer .footer__items .header__link--hover:hover, .main__footer .footer__items .footer__link--hover:hover {
+.header__items__link--hover:hover, .header__items .footer__link--hover:hover, .header__items__link--hover:hover, .header__items .footer__link--hover:hover, .footer__items__link--hover:hover, .footer__items .footer__link--hover:hover, .footer__items__link--hover:hover, .footer__items .footer__link--hover:hover {
   color: black;
   font-size: 25px;
+  padding: 10px;
 }
 
-.main__section * {
+.section {
+  margin: 10px;
+}
+.section * {
   font-family: "Roboto", sans-serif;
   color: #105555;
 }
-.main__section .section__box {
+.section__box {
+  margin: 10px;
   background-color: #c2e0e0;
   border: #28527a;
   border: 0.1rem solid #105555;
@@ -60,115 +65,132 @@ a:hover, i:hover {
   justify-content: space-around;
   align-items: center;
 }
-.main__section .section__box .section__header {
+.section__box__header {
   font-size: 1.5rem;
   text-align: center;
 }
-.main__section .section__box .about__me {
+.section__box .about__me {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-.main__section .section__box .about__me .intro__details {
+.section__box .about__me .intro__details {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
+  padding-top: 75px;
 }
-.main__section .section__box .about__me .intro__details * {
+.section__box .about__me .intro__details * {
   font-family: "Dancing Script", cursive;
 }
-.main__section .section__box .about__me .intro__details .works__button {
+.section__box .about__me .intro__details .works__button {
   background-color: #f0a500;
   font-size: 15px;
   font-weight: bold;
   padding: 20px;
   border: 1px solid black;
   border-radius: 10px;
+  box-shadow: 10px 5px 5px #28527a;
 }
-.main__section .section__box .about__me .intro__details .works__button--hover:hover {
+.section__box .about__me .intro__details .works__button--hover:hover {
   color: black;
   font-size: 20px;
+  background-color: #f0a500;
 }
-.main__section .section__box .about__me .profile__pic {
+.section__box .about__me .profile__pic {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.main__section .section__box .about__me .profile__pic .profile__image {
-  border-radius: 100%;
+.section__box .about__me .profile__pic .profile__image {
+  border-radius: 5%;
+  border: 2px solid #fafafa;
+  height: 85%;
+  width: 85%;
+  box-shadow: 10px 5px 5px #28527a;
+}
+.section__box .about__me .profile__pic .profile__image:hover {
+  border-radius: 5%;
   border: 2px solid #fafafa;
   height: 90%;
   width: 90%;
+  box-shadow: 10px 5px 5px #f0a500;
 }
-.main__section #tech-skills {
+.section #tech-skills {
   display: grid;
   grid-template-rows: 1fr 2fr 2fr;
 }
-.main__section #tech-skills .skills__text {
+.section #tech-skills .skills__text {
   font-family: "Dancing Script", cursive;
   font-size: 25px;
   font-weight: bold;
   text-align: center;
 }
-.main__section #tech-skills .skills__tools {
+.section #tech-skills .skills__tools {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
-.main__section #tech-skills .skills__tools .fa-brands, .main__section #tech-skills .skills__tools .fa-solid {
+.section #tech-skills .skills__tools .fa-brands, .section #tech-skills .skills__tools .fa-solid {
   padding: 20px;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-.main__section #my-projects {
+.section #my-projects {
   display: grid;
   grid-template-rows: 1fr 4fr;
 }
-.main__section #my-projects .card__list {
+.section #my-projects .card__list {
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 5px;
+  grid-gap: 10px;
 }
-.main__section #my-projects .card__list .card__project {
+.section #my-projects .card__list .card__project {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  border: 2px solid #105555;
+  border: 2px solid #fafafa;
   border-radius: 5px;
+  box-shadow: 5px 2px 2px #28527a;
 }
-.main__section #my-projects .card__list .card__project .project__desc {
+.section #my-projects .card__list .card__project .project__desc {
   font-family: "Dancing Script", cursive;
   font-size: 2rem;
 }
-.main__section #my-projects .card__list .card__project .project__img {
-  height: 60%;
-  width: 70%;
+.section #my-projects .card__list .card__project .project__img {
+  height: 50%;
+  width: 50%;
 }
-.main__section #my-projects .card__list .card__project .project__link {
+.section #my-projects .card__list .card__project .project__link {
   font-weight: bolder;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-@media screen and (max-width: 883px) {
-  .main__header, .main__footer {
+@media screen and (max-width: 880px) {
+  .header, .footer {
     height: 10vh;
     background-color: #105555;
     display: grid;
     grid-template-rows: 1fr 4fr;
   }
-  .main__header *, .main__footer * {
+  .header *, .footer * {
     font-family: "Dancing Script", cursive;
     color: #fafafa;
   }
-  .main__header .header__title, .main__header .footer__title, .main__footer .header__title, .main__footer .footer__title {
+  .header__title, .header__title, .footer__title, .footer__title {
     font-size: 1.5rem;
   }
-  .main__header .header__items, .main__header .footer__items, .main__footer .header__items, .main__footer .footer__items {
+  .header__items, .header__items, .footer__items, .footer__items {
     font-size: 1rem;
+  }
+}
+@media screen and (min-width: 500px) {
+  .intro__details {
+    padding-top: 200px;
   }
 }/*# sourceMappingURL=styles.css.map */
