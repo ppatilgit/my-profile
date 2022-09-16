@@ -106,10 +106,10 @@ a:hover, i:hover{
                 justify-content: center;
                 align-items: center;
                 .profile__image{
-                    border-radius: 100px;
+                    border-radius: 100%;
                     border: 2px solid $color-white;
                     height: 90%;
-                    width: 80%;
+                    width: 90%;
                 }
             }
         }
@@ -149,6 +149,8 @@ a:hover, i:hover{
                 flex-direction: column;
                 justify-content: space-between;
                 align-items: center;
+                border: 2px solid $color-background;
+                border-radius: 5px;
                 .project__desc{
                     font-family: $font-display;
                     font-size: 2rem;
@@ -165,6 +167,25 @@ a:hover, i:hover{
                 }
 
             }
+        }
+    }
+}
+@media screen and (max-width: 883px){
+    .main__header, .main__footer{
+        height: 10vh;
+        background-color: $color-background;
+        display: grid;
+        grid-template-rows: 1fr 4fr;
+        
+        *{
+            font-family: $font-display;
+            color: $color-white;
+        }
+        .header__title, .footer__title{
+            font-size: 1.5rem;
+        }
+        .header__items, .footer__items{
+            font-size: 1rem;
         }
     }
 }
