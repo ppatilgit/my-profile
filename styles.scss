@@ -51,9 +51,9 @@ a:hover, i:hover{
             font-size: 1.5rem;
         }
         &__link--hover:hover, .footer__link--hover:hover {
-            color: black;
+            color: $color-background;
             font-size: 25px;
-            padding: 10px;
+            padding: 20px;
         }
     }
     
@@ -68,7 +68,6 @@ a:hover, i:hover{
     &__box{
         margin: 10px;
         background-color: $color-white;
-        border: #28527a;
         border-radius: 5px;
         display: flex;
         flex-direction: column;
@@ -102,7 +101,7 @@ a:hover, i:hover{
                 .works__button--hover:hover{
                     background-color:  $color-secondary;
                     color: $color-background;
-                    box-shadow: 10px 5px 5px  $color-primary; 
+                    box-shadow: 10px 5px 5px  $color-background; 
                 }
                 
             }
@@ -156,9 +155,9 @@ a:hover, i:hover{
                 flex-direction: column;
                 justify-content: space-between;
                 align-items: center;
-                border: 2px solid $color-background;
+                border: 2px solid $color-secondary;
                 border-radius: 5px;
-                box-shadow: 5px 2px 2px $color-secondary ;
+                box-shadow: 5px 2px 2px $color-secondary;
                 .project__desc{
                     font-family: $font-body;
                     font-size: 2rem;

@@ -41,9 +41,9 @@ a:hover, i:hover {
   font-size: 1.5rem;
 }
 .header__items__link--hover:hover, .header__items .footer__link--hover:hover, .header__items__link--hover:hover, .header__items .footer__link--hover:hover, .footer__items__link--hover:hover, .footer__items .footer__link--hover:hover, .footer__items__link--hover:hover, .footer__items .footer__link--hover:hover {
-  color: black;
+  color: #623B5A;
   font-size: 25px;
-  padding: 10px;
+  padding: 20px;
 }
 
 .section {
@@ -56,7 +56,6 @@ a:hover, i:hover {
 .section__box {
   margin: 10px;
   background-color: #fafafa;
-  border: #28527a;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
@@ -93,7 +92,7 @@ a:hover, i:hover {
 .section__box .about__me .intro__details .works__button--hover:hover {
   background-color: #E7DADA;
   color: #623B5A;
-  box-shadow: 10px 5px 5px #28527a;
+  box-shadow: 10px 5px 5px #623B5A;
 }
 .section__box .about__me .profile__pic {
   display: flex;
@@ -144,7 +143,7 @@ a:hover, i:hover {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  border: 2px solid #623B5A;
+  border: 2px solid #E7DADA;
   border-radius: 5px;
   box-shadow: 5px 2px 2px #E7DADA;
 }
