@@ -11,18 +11,17 @@ a:visited {
 }
 
 a:hover, i:hover {
-  color: white;
-  background-color: #f0a500;
+  background-color: #E7DADA;
 }
 
 .header, .footer {
   height: 10vh;
-  background-color: #105555;
+  background-color: #623B5A;
   display: grid;
   grid-template-columns: 1fr 3fr;
 }
 .header *, .footer * {
-  font-family: "Dancing Script", cursive;
+  font-family: "Roboto", sans-serif;
   color: #fafafa;
 }
 .header__title, .header__title, .footer__title, .footer__title {
@@ -34,7 +33,7 @@ a:hover, i:hover {
 }
 .header__items, .header__items, .footer__items, .footer__items {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
 }
 .header__items__link, .header__items .footer__link, .header__items__link, .header__items .footer__link, .footer__items__link, .footer__items .footer__link, .footer__items__link, .footer__items .footer__link {
@@ -52,13 +51,12 @@ a:hover, i:hover {
 }
 .section * {
   font-family: "Roboto", sans-serif;
-  color: #105555;
+  color: #623B5A;
 }
 .section__box {
   margin: 10px;
-  background-color: #c2e0e0;
+  background-color: #fafafa;
   border: #28527a;
-  border: 0.1rem solid #105555;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
@@ -80,21 +78,22 @@ a:hover, i:hover {
   padding-top: 75px;
 }
 .section__box .about__me .intro__details * {
-  font-family: "Dancing Script", cursive;
+  font-family: "Roboto", sans-serif;
 }
 .section__box .about__me .intro__details .works__button {
-  background-color: #f0a500;
-  font-size: 15px;
+  color: #fafafa;
+  background-color: #623B5A;
+  font-size: 20px;
   font-weight: bold;
   padding: 20px;
-  border: 1px solid black;
+  border: 1px solid #fafafa;
   border-radius: 10px;
-  box-shadow: 10px 5px 5px #28527a;
+  box-shadow: 10px 5px 5px #E7DADA;
 }
 .section__box .about__me .intro__details .works__button--hover:hover {
-  color: black;
-  font-size: 20px;
-  background-color: #f0a500;
+  background-color: #E7DADA;
+  color: #623B5A;
+  box-shadow: 10px 5px 5px #28527a;
 }
 .section__box .about__me .profile__pic {
   display: flex;
@@ -104,24 +103,17 @@ a:hover, i:hover {
 .section__box .about__me .profile__pic .profile__image {
   border-radius: 5%;
   border: 2px solid #fafafa;
-  height: 85%;
-  width: 85%;
-  box-shadow: 10px 5px 5px #28527a;
-}
-.section__box .about__me .profile__pic .profile__image:hover {
-  border-radius: 5%;
-  border: 2px solid #fafafa;
-  height: 90%;
-  width: 90%;
-  box-shadow: 10px 5px 5px #f0a500;
+  height: 87%;
+  width: 72%;
+  box-shadow: 10px 5px 5px #E7DADA;
 }
 .section #tech-skills {
   display: grid;
   grid-template-rows: 1fr 2fr 2fr;
 }
 .section #tech-skills .skills__text {
-  font-family: "Dancing Script", cursive;
-  font-size: 25px;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
   font-weight: bold;
   text-align: center;
 }
@@ -152,16 +144,16 @@ a:hover, i:hover {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  border: 2px solid #fafafa;
+  border: 2px solid #623B5A;
   border-radius: 5px;
-  box-shadow: 5px 2px 2px #28527a;
+  box-shadow: 5px 2px 2px #E7DADA;
 }
 .section #my-projects .card__list .card__project .project__desc {
-  font-family: "Dancing Script", cursive;
+  font-family: "Roboto", sans-serif;
   font-size: 2rem;
 }
 .section #my-projects .card__list .card__project .project__img {
-  height: 50%;
+  height: 70%;
   width: 50%;
 }
 .section #my-projects .card__list .card__project .project__link {
@@ -173,24 +165,6 @@ a:hover, i:hover {
 
 @media screen and (max-width: 880px) {
   .header, .footer {
-    height: 10vh;
-    background-color: #105555;
-    display: grid;
-    grid-template-rows: 1fr 4fr;
-  }
-  .header *, .footer * {
-    font-family: "Dancing Script", cursive;
-    color: #fafafa;
-  }
-  .header__title, .header__title, .footer__title, .footer__title {
-    font-size: 1.5rem;
-  }
-  .header__items, .header__items, .footer__items, .footer__items {
-    font-size: 1rem;
-  }
-}
-@media screen and (min-width: 500px) {
-  .intro__details {
-    padding-top: 200px;
+    display: none;
   }
 }/*# sourceMappingURL=styles.css.map */

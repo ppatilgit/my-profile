@@ -4,10 +4,10 @@ $font-body:"Roboto", sans-serif;
 $font-display: "Dancing Script", cursive;
 
 $color-primary: #28527a;
-$color-secondary: #f0a500;
+$color-secondary: #E7DADA;
 $color-black: #333333;
 $color-white: #fafafa;
-$color-background: 	#105555;
+$color-background: 	#623B5A;
 $color-background-section: 	#c2e0e0;
 
 
@@ -22,7 +22,6 @@ a:visited{
     text-decoration: none;
 }
 a:hover, i:hover{
-    color: white;
     background-color:  $color-secondary;
 }
 
@@ -33,7 +32,7 @@ a:hover, i:hover{
     grid-template-columns: 1fr 3fr;
     
     *{
-        font-family: $font-display;
+        font-family: $font-body;
         color: $color-white;
     }
     &__title, &__title{
@@ -45,7 +44,7 @@ a:hover, i:hover{
     }
     &__items, &__items{
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-around;
         align-items: center;
         &__link, .footer__link{
             text-decoration: none;
@@ -68,9 +67,8 @@ a:hover, i:hover{
     }
     &__box{
         margin: 10px;
-        background-color: $color-background-section;
+        background-color: $color-white;
         border: #28527a;
-        border: 0.1rem solid $color-background;
         border-radius: 5px;
         display: flex;
         flex-direction: column;
@@ -85,26 +83,26 @@ a:hover, i:hover{
             grid-template-columns: 1fr 1fr;
             .intro__details{
                 *{
-                    font-family: $font-display;
+                    font-family: $font-body;
                 }
                 display: flex;
                 flex-direction: column;
-                // justify-content: space-around;
                 align-items: center;
                 padding-top:75px;
                 .works__button{
-                    background-color: $color-secondary;
-                    font-size: 15px;
+                    color: $color-white;
+                    background-color: $color-background;
+                    font-size: 20px;
                     font-weight: bold;
                     padding: 20px;
-                    border: 1px solid black;
+                    border: 1px solid $color-white;
                     border-radius: 10px;
-                    box-shadow: 10px 5px 5px $color-primary ;
+                    box-shadow: 10px 5px 5px  $color-secondary ;
                 }
-                .works__button--hover:hover {
-                    color: black;
-                    font-size: 20px;
-                    background-color: $color-secondary;
+                .works__button--hover:hover{
+                    background-color:  $color-secondary;
+                    color: $color-background;
+                    box-shadow: 10px 5px 5px  $color-primary; 
                 }
                 
             }
@@ -115,15 +113,8 @@ a:hover, i:hover{
                 .profile__image{
                     border-radius: 5%;
                     border: 2px solid $color-white;
-                    height: 85%;
-                    width: 85%;
-                    box-shadow: 10px 5px 5px $color-primary ;
-                }
-                .profile__image:hover{
-                    border-radius: 5%;
-                    border: 2px solid $color-white;
-                    height: 90%;
-                    width: 90%;
+                    height: 87%;
+                    width: 72%;
                     box-shadow: 10px 5px 5px $color-secondary ;
                 }
             }
@@ -133,8 +124,8 @@ a:hover, i:hover{
         display: grid;
         grid-template-rows: 1fr 2fr 2fr;
         .skills__text{
-            font-family: $font-display;
-            font-size: 25px;
+            font-family: $font-body;
+            font-size: 15px;
             font-weight: bold;
             text-align: center;
         }
@@ -165,15 +156,15 @@ a:hover, i:hover{
                 flex-direction: column;
                 justify-content: space-between;
                 align-items: center;
-                border: 2px solid $color-white;
+                border: 2px solid $color-background;
                 border-radius: 5px;
-                box-shadow: 5px 2px 2px $color-primary ;
+                box-shadow: 5px 2px 2px $color-secondary ;
                 .project__desc{
-                    font-family: $font-display;
+                    font-family: $font-body;
                     font-size: 2rem;
                 }
                 .project__img{
-                    height: 50%;
+                    height: 70%;
                     width: 50%;
                 }
                 .project__link{
@@ -189,26 +180,7 @@ a:hover, i:hover{
 }
 @media screen and (max-width: 880px){
     .header, .footer{
-        height: 10vh;
-        background-color: $color-background;
-        display: grid;
-        grid-template-rows: 1fr 4fr;
-        
-        *{
-            font-family: $font-display;
-            color: $color-white;
-        }
-        &__title, &__title{
-            font-size: 1.5rem;
-        }
-        &__items, &__items{
-            font-size: 1rem;
-        }
+        display: none;
     }
 }
 
-@media screen and (min-width: 500px){
-    .intro__details{
-     padding-top:200px;
-    }
-}
