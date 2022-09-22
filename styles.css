@@ -23,6 +23,7 @@ a:hover, i:hover {
 .header *, .footer * {
   font-family: "Roboto", sans-serif;
   color: #fafafa;
+  padding: 20px;
 }
 .header__title, .header__title, .footer__title, .footer__title {
   font-size: 3rem;
@@ -42,8 +43,6 @@ a:hover, i:hover {
 }
 .header__items__link--hover:hover, .header__items .footer__link--hover:hover, .header__items__link--hover:hover, .header__items .footer__link--hover:hover, .footer__items__link--hover:hover, .footer__items .footer__link--hover:hover, .footer__items__link--hover:hover, .footer__items .footer__link--hover:hover {
   color: #623B5A;
-  font-size: 25px;
-  padding: 20px;
 }
 
 .section {
@@ -92,7 +91,6 @@ a:hover, i:hover {
 .section__box .about__me .intro__details .works__button--hover:hover {
   background-color: #E7DADA;
   color: #623B5A;
-  box-shadow: 10px 5px 5px #623B5A;
 }
 .section__box .about__me .profile__pic {
   display: flex;

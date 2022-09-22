@@ -3,7 +3,6 @@
 $font-body:"Roboto", sans-serif;
 $font-display: "Dancing Script", cursive;
 
-$color-primary: #28527a;
 $color-secondary: #E7DADA;
 $color-black: #333333;
 $color-white: #fafafa;
@@ -34,6 +33,7 @@ a:hover, i:hover{
     *{
         font-family: $font-body;
         color: $color-white;
+        padding: 20px;
     }
     &__title, &__title{
         font-size: 3rem;
@@ -52,8 +52,6 @@ a:hover, i:hover{
         }
         &__link--hover:hover, .footer__link--hover:hover {
             color: $color-background;
-            font-size: 25px;
-            padding: 20px;
         }
     }
     
@@ -101,7 +99,6 @@ a:hover, i:hover{
                 .works__button--hover:hover{
                     background-color:  $color-secondary;
                     color: $color-background;
-                    box-shadow: 10px 5px 5px  $color-background; 
                 }
                 
             }
